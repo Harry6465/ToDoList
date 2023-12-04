@@ -13,7 +13,10 @@ module.exports.saveToDo = (req, res) => {
       console.log("Saved Successfully...");
       res.status(201).send(data);
     })
-    .catch((err) => console.log(err));
+    .catch((err) => {
+      console.log(err);
+      res.send({ error: err, msg: "Something went wrong!" });
+    });
 };
 
 module.exports.updateToDo = (req, res) => {
