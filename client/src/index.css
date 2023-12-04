@@ -96,9 +96,10 @@ button:hover {
 
 .popup {
   position: relative;
-  background-color: #696969;
-  width: 400px;
-  padding: 10px;
+  background-color: #b0b8f9;
+  width: 500px;
+  padding: 25px;
+  border-radius: 10px;
 }
 
 .cross {
